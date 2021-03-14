@@ -18,10 +18,10 @@
     var removeArray = ourArray.pop();
     
     var myArray =[["John", 23], ["cat", 2]];
-    console.log(myArray);
+    //console.log(myArray);
     var removeArray = myArray.pop();
 
-    console.log(myArray);
+    //console.log(myArray);
 
     function compareEquality(val) {
         if(val != 99) {
@@ -29,7 +29,7 @@
         }
         return "False";
     }
-    console.log(compareEquality(20));
+    //console.log(compareEquality(20));
 
 
     function testGreaterOrEqual(val) {
@@ -41,8 +41,12 @@
         }
         return "Less than 10";
     }
-    console.log(testGreaterOrEqual(9));
+    //console.log(testGreaterOrEqual(9));
 
+    
+
+
+    //var num1, num2;
     function calculator(num1,num2,sign) {
         var answer = "";
         switch(sign) {
@@ -55,13 +59,29 @@
             case "/":
                 return answer= num1/num2;
 
-        }
+        };
         
+    };
+    //console.log(calculator(num1,num2,sign));
+
+    var ourDog = {
+        "name" : "Camper",
+        "legs" : 4,
+        "tails": 1,
+        "friends": ["everything!"]
+    };
+
+    var sname = ourDog.name;
+    var sleg = ourDog.legs;
+
+    //console.log(sleg);
+    var myArray2 = [];
+    for(var i=0; i<6; i++) {
+        myArray2.push(i);
     }
-    console.log(calculator(num1,num2,sign));
+    console.log(myArray2);
 
     
-
 
 
 </script>
