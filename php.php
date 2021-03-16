@@ -47,5 +47,42 @@
         echo "<br/>";  
   
     }
+	
+	//indexed array
+$people = array('pias', 'sami', 'sazzad');
+//echo $people[2];
+
+$ids = array(23, 55, 12);
+$cars =['honda', 'Toyota', 'Ford'];
+
+//echo $cars[1];
+
+//echo count($cars);
+//print_r($cars);
+
+//associative arrays
+$people = array(
+  'name' => 'Pias', 
+  'age' => 32, 
+  'address' => array('Bashundhara','Ghulshan', 'Badda'),
+  );
+
+//echo $people['Brad'];
+//print_r($people);
+//var_dump($people);
+
+//Multi DImensional 
+$cars = array(
+  array('Honda', 20, 10),
+  array('Toyota', 30, 20),
+  array('Ford', 23, 12),
+  );
+//echo $cars[1][2];
+ //echo "My name {$people['name']} and age {$people['age']} ";
+//echo $people['address'][0];
+
+foreach($cars as $key=>$value){
+  echo '<p>.$key.':'.$value.'</p>'; 
+};
     
 ?>
